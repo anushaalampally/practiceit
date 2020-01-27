@@ -1,0 +1,30 @@
+package chapterfour;
+
+
+/*Write a method called printRange that accepts two integers as arguments and prints the sequence of numbers between the two arguments, separated by spaces. Print an increasing sequence if the first argument is smaller than the second; otherwise, print a decreasing sequence. If the two numbers are the same, that number should be printed by itself. Here are some sample calls to printRange:
+
+printRange(2, 7);  Output:2 3 4 5 6 7
+printRange(19, 11); Output:19 18 17 16 15 14 13 12 11 
+printRange(5, 5); Output: 5
+The output produced should be the following:*/
+
+
+public class PrintRange {
+	
+	
+	public static void printRange(int a,int b){
+		if(a<b){
+			for(int i=a;i<=b;i++){
+				System.out.print(i+" ");
+			}
+		}
+		
+			else{
+				for(int i=a;i>=b;i--){
+					System.out.print(i+" ");
+				}
+			}
+			System.out.println();
+		}
+
+}
